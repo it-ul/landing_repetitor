@@ -69,6 +69,9 @@ button,input,select,textarea{font:inherit;color:inherit}
 .btn--wa:hover{border-color:var(--wa)}
 .btn--tg{background:#fff;border-color:var(--line);color:var(--ink)}
 .btn--tg:hover{border-color:#2aabee}
+.btn--max{background:#fff;border-color:var(--line);color:var(--ink)}
+.btn--max:hover{border-color:#9840db}
+.ico--img{width:20px;height:20px;flex:0 0 20px;border-radius:6px}
 .btn--block{width:100%}
 .btn--sm{padding:10px 16px;font-size:15px}
 .ico{width:18px;height:18px;flex:0 0 18px}
@@ -113,11 +116,11 @@ button,input,select,textarea{font:inherit;color:inherit}
 
 .photo-card{
   position:relative;border-radius:var(--radius-lg);overflow:hidden;
-  background:linear-gradient(160deg,#dfe5ff,#eef1ff 55%,#fff);
+  background:#fff;
   border:1px solid var(--line);box-shadow:var(--shadow);
   aspect-ratio:4/5;display:grid;place-items:center;
 }
-.photo-card__img{width:100%;height:100%;object-fit:cover;object-position:50% 18%}
+.photo-card__img{width:100%;height:100%;object-fit:cover;object-position:50% 50%}
 .photo-card__ph{text-align:center;color:var(--brand);padding:20px}
 .photo-card__ph b{display:block;font-size:56px;font-weight:800;letter-spacing:-.03em;line-height:1}
 .photo-card__ph span{display:block;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#7d8bb8;margin-top:10px}
@@ -155,10 +158,10 @@ button,input,select,textarea{font:inherit;color:inherit}
 .about__grid{display:grid;gap:28px}
 .about__photo{
   border-radius:var(--radius-lg);border:1px solid var(--line);overflow:hidden;
-  background:linear-gradient(160deg,#eef1ff,#fff);aspect-ratio:4/5;display:grid;place-items:center;
+  background:#fff;aspect-ratio:4/5;display:grid;place-items:center;
   color:var(--brand);text-align:center;box-shadow:var(--shadow-sm);
 }
-.about__photo img{width:100%;height:100%;object-fit:cover;object-position:50% 18%}
+.about__photo img{width:100%;height:100%;object-fit:cover;object-position:50% 50%}
 .about__photo b{display:block;font-size:44px;font-weight:800}
 .about__photo span{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#7d8bb8;font-weight:700}
 .about__list{display:grid;gap:12px;margin-top:18px}
@@ -359,7 +362,7 @@ body{padding-bottom:76px}
 
       <div>
         <div class="photo-card">
-          <img class="photo-card__img" src="assets/tutor.jpg" width="940" height="1200"
+          <img class="photo-card__img" src="assets/tutor.jpg" width="940" height="1175"
                alt="Преподаватель английского языка">
           <div class="photo-card__tag">
             <b>Анна Соколова</b>
@@ -433,7 +436,7 @@ body{padding-bottom:76px}
   <section class="section section--soft" id="about">
     <div class="wrap about__grid">
       <div class="about__photo">
-        <img src="assets/tutor-small.jpg" width="470" height="600" alt="Преподаватель английского языка">
+        <img src="assets/tutor-small.jpg" width="470" height="588" alt="Преподаватель английского языка">
       </div>
       <div>
         <span class="eyebrow">Обо мне</span>
@@ -625,6 +628,10 @@ body{padding-bottom:76px}
             <a class="btn btn--tg btn--block" href="https://t.me/annenglish" target="_blank" rel="noopener">
               <svg class="ico" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.9 4.3 18.7 19c-.2 1-.9 1.3-1.7.8l-4.6-3.4-2.2 2.1c-.3.3-.5.5-1 .5l.3-4.7 7.4-6.7c.3-.3 0-.4-.5-.1L6.2 13.1l-4.5-1.4c-1-.3-1-1 .2-1.4l18.6-7.2c.8-.3 1.6.2 1.4 1.2Z"/></svg>
               Telegram
+            </a>
+            <a class="btn btn--max btn--block" href="https://max.ru/u/annenglish" target="_blank" rel="noopener">
+              <img class="ico--img" src="assets/max-icon.png" width="20" height="20" alt="">
+              MAX
             </a>
             <a class="btn btn--ghost btn--block" href="tel:+79990001122">Позвонить: +7 999 000-11-22</a>
           </div>
