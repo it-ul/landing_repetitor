@@ -1,6 +1,12 @@
 # DEV-JOURNAL — landing_repetitor
 
-## Статус: рабочий прототип готов (макеты сняты)
+## Статус: задеплоено на GitHub Pages
+
+- Сайт: https://it-ul.github.io/landing_repetitor/ — проверено: HTTP 200, HTML 38 КБ,
+  `assets/tutor.jpg` и `assets/tutor-small.jpg` отдаются с кодом 200.
+- Репозиторий: https://github.com/it-ul/landing_repetitor — публичный, ветка `main`,
+  коммит `b264ca9`. Git-пользователь локально: `it-ul <it-ul@users.noreply.github.com>`
+  (глобальный рабочий email в коммиты не попал).
 
 ### Что сделано
 - `index.html` — одностраничник репетитора по английскому: 10 секций (хедер, hero со фото,
@@ -29,4 +35,5 @@
 1. Заменить плейсхолдеры: фото (в двух местах — `.photo-card` и `.about__photo`), имя, цены,
    телефон, ник Telegram, реквизиты в футере.
 2. Подключить реальную отправку формы (Telegram-бот / Formspree / почта).
-3. Деплой на бесплатный хостинг (Netlify / GitHub Pages) — только с согласия пользователя.
+3. ~~Деплой на бесплатный хостинг~~ — сделано: GitHub Pages (репо `it-ul/landing_repetitor`).
+   Обновление сайта = `git push` в `main`, Pages пересобирается сам за 1–2 минуты.
